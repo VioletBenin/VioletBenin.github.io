@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/register-login.css" />
+    <link rel="stylesheet" type="text/css" href="css/verifyCode.css" />
+    <link rel="icon" href="icon.ico">
+    <title>注册</title>
+</head>
+
+<body>
+    <!------------------------------------------------navbar begin-------------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-asterisk"> </span>同城聚合</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="cover.html">封面</a></li>
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="market.html">市场</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于
+                    <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="publish.html">意见反馈</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">联系我</li>
+                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2424515614&amp;site=qq&amp;menu=yes">QQ</a></li>
+                            <li><a href="mailto:violetbenin@qq.com?subject=关于同城聚合的建议&body=您好,关于同城聚合的建议如下:">E-mail</a></li>
+                            <li><a href="https://github.com/VioletBenin">Github</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="您想搜索什么功能...">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="register.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------------navbar end----------------------------------------------------->
+    <div class="container" style="text-align:center;">
+        <marquee behavior="scroll" direction="right">
+            <h4>
+                <center>* * * QST最大的同城聚合平台 * * *</center>
+            </h4>
+        </marquee>
+        <div class="navbar-collapse collapse" style=" width:80%;  position: relative; left: 10%;">
+            <ul class="nav nav-tabs" style="text-align:center;  position: relative; left: 43%;">
+                <li role="presentation"><a href="login.html">登录</a></li>
+                <li role="presentation" class="active"><a href="#">注册</a></li>
+            </ul>
+            <div class="jumbotron">
+                <h1>
+                    <center>注册</center>
+                </h1>
+                <br>
+                <div class="tips">
+                    <span>→已有账号？您可以直接: <a href="login.html">登录 </a></span><br>
+                    <span>→注册太麻烦？试试: <a href="index.html">游客模式</a></span>
+                </div>
+                <br>
+                <!-- glyphicon glyphicon-ok btn-success -->
+                <!-- glyphicon glyphicon-remove btn-danger -->
+                <form action="#" id="form-login" class="diy-form" style=" text-align: left;">
+                    <div class="form-group" style="position:relative;">
+                        <label for="name" style="text-align: left;">*用户名 <font class="font" style="color: red;zoom:95%;font-weight:500;display:none;"> &nbsp; 用户名2-8位，仅由数字或字母构成 !</font></label>
+                        <input id="name" type="text" class="form-control required" placeholder="请输入2-8位的用户名，仅由数字或字母构成">
+                        <span class="" style="position:absolute;right:1.5%;top:60%; "></span>
+                    </div>
+                    <div class="form-group" style="position:relative;">
+                        <label for="password">*密码 <font class="font" style="color: red;zoom:95%;font-weight:500;display:none;"> &nbsp; 密码6-20位,必须同时包含数字、大小写字母三种类型 !</font></label>
+                        <input id="password" type="password" class="form-control required" placeholder="请输入6-20位的密码，必须同时包含数字、大小写字母三种类型" value="">
+                        <span class="" style="position:absolute;right:1.5%;top:60%;"></span>
+                    </div>
+                    <div class="form-group" style="position:relative;">
+                        <label for="re-password">*确认密码 <font class="font" style="color: red;zoom:95%;font-weight:500;display:none;"> &nbsp;两次密码不一致 !</font></label>
+                        <input id="re-password" type="password" class="form-control required" placeholder="请再次输入密码">
+                        <span class="" style="position:absolute;right:1.5%;top:60%; "></span>
+                    </div>
+                    <div class="form-group row" style="position:relative;left:2.1%; ">
+                        <label for="e-mail">邮箱</label>
+                        <div class="need-check">
+                            <input id="e-mail" type="text" class="form-control optional" placeholder="请输入邮箱" style="width: 55%;" />
+                            <span id="name-verify4" class="" style="position:absolute;right:46.5%;top:60%; "></span>
+                            <div class="input-group" style="width: 20%; position:absolute;top:25px;left:60%; ">
+                                <div class="row input-group-btn">
+                                    <input type="text" class="form-control" aria-label="邮箱验证码" placeholder="一分钟后失效">
+                                    <button type="button" class="btn btn-info" aria-label="Bold" onclick="getEmail()">邮箱验证</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row" style="position:relative;left:2.1%; ">
+                        <label for="tele">手机号</label>
+                        <div class="need-check">
+                            <input id="tele" type="text" class="form-control optional" placeholder="请输入手机号" style="width: 55%;" />
+                            <span id="name-verify5" class="" style="position:absolute;right:46.5%;top:60%; "></span>
+                            <div class="input-group" style="width: 20%; position:absolute;top:25px;left:60%; ">
+                                <div class="row input-group-btn">
+                                    <input type="text" class="form-control" aria-label="手机验证码" placeholder="一分钟后失效">
+                                    <button type="button" class="btn btn-info" aria-label="Bold" onclick="getTele()">手机验证</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="position:relative; ">
+                        <label for="verifycode">*提交验证码<font class="font" style="color: red;zoom:95%;font-weight:500;display:none;"> &nbsp; 验证码不能为空 !</font></label>
+                        <div id="verifycode" class="verificationCode" style=" height:34px; width:auto;position:absolute; right:15%; top:0; ">
+                            <span id="refresh-verifycode" class="glyphicon glyphicon-refresh" style="zoom:150%; position:relative; right:-105%; top:100%; "> </span>
+                            <canvas width="100" height="40" id="verifyCanvas"></canvas>
+                            <img id="code_img" style="display:inline;">
+                        </div>
+                        <input type="text " id="verifital_input" placeholder="请输入验证码 " class="form-control required" style="width: 65%; ">
+                        <!-- <span class="glyphicon glyphicon-ok btn-success " style="position:absolute;right:36.5%;top:60%; "></span> -->
+                    </div>
+                    <br>
+                    <div style=" text-align:center; margin:30px auto; ">
+                        <input id="check-info" type="submit " class="btn btn-primary btn-operate " value="注册" style=" margin:auto 5% ;" onclick="checkAll()">
+                        <input type="reset " class="btn btn-warning btn-operate " value="清空 " style="  margin:auto 5% ;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------- js begin------------------------------>
+    <!---------------- base js begin------------------>
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type="text/javascript " src="bootstrap3/js/bootstrap.js "></script>
+    <!---------------- base js end------------------>
+    <script type="text/javascript " src="js/code.js "></script>
+    <!-- for verifyCode -->
+    <script type="text/javascript " src="js/register.js "></script>
+    <!-- for register operate -->
+
+    <!-------------------------------- js end------------------------------>
+
+</body>
+
+</html>

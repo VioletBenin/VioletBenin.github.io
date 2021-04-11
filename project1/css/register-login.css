@@ -1,0 +1,33 @@
+.container marquee {
+    color: white;
+    background-color: orange;
+}
+
+.container .back-span {
+    text-align: left;
+    margin: 10px;
+    padding: 5px;
+    border: 1px black solid;
+}
+
+.container form {
+    margin-top：20px;
+    padding-top：20px;
+}
+
+.container .nav-tabs {
+    border-bottom: 0px;
+}
+
+.container .tips {
+    text-align: center;
+    background-color: white;
+    width: 46%;
+    padding: 1.5% 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tips {
+    padding: 5% 5%;
+}

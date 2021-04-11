@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+    <title>首页</title>
+</head>
+
+<body class="pinkTheme">
+    <!------------------------------------------------navbar begin-------------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-asterisk"> </span>同城聚合</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="cover.html">封面</a></li>
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="market.html">市场</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于
+                <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">意见反馈</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">联系我</li>
+                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2424515614&amp;site=qq&amp;menu=yes">QQ</a></li>
+                            <li><a href="mailto:violetbenin@qq.com?subject=关于同城聚合的建议&body=您好,关于同城聚合的建议如下:">E-mail</a></li>
+                            <li><a href="https://github.com/VioletBenin">Github</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="您想搜索什么功能...">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="register.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------------navbar end----------------------------------------------------->
+
+    <!-------------------------------------Title-start---------------------------------------->
+    <header id="Title">
+        <div class="container ">
+            <div class="row text-center">
+
+                <div class="col-xs-2">
+                    <img src="images/detail1.jpeg">
+                </div>
+                <div class="col-xs-5">
+                    <section>
+                        <p class="h3">发布人昵称</p>
+                        <p class="h4">个人空间</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-------------------------------------Title-start---------------------------------------->
+
+    <!----------------------------------------------container begin-------------------------------------------------->
+
+    <div class="container">
+        <!-------------------------------------Detail-start---------------------------------------->
+        <section id="Detail">
+            <section class="price">
+                <p>
+                    <span class="h4">价格：</span>
+                    <span>￥<span>12</span></span>
+                </p>
+            </section>
+            <section class="detail">
+                <p>
+                    <p class="h4">详情</p>
+                    <p>商家详情页（含主图）以图片或文字形式标注的一口价、促销价、优惠价等价格可能是在使用优惠券、满减或特定优惠活动和时段等情形下的价格，具体请以结算页面的标价、优惠条件或活动规则为准。 此说明仅当出现价格比较时有效，具体请参见《淘宝价格发布规范》。若商家单独对划线价格进行说明的，以商家的表述为准。
+                    </p>
+                </p>
+            </section>
+            <section class="pic">
+                <div id="box" class="carousel slide" data-ride="carousel">
+                    <!-- 标识 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#box" data-slide-to="0" class="active"></li>
+                        <li data-target="#box" data-slide-to="1" class="active"></li>
+                        <li data-target="#box" data-slide-to="2" class="active"></li>
+                    </ol>
+                    <!-- 幻灯片 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-rounded" src="images/exp1.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h4>图片标题</h4>
+                                <p>描述文字</p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <img class="img-rounded" src="images/exp2.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h4>图片标题</h4>
+                                <p>描述文字</p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <img class="img-rounded" src="images/exp3.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h4>图片标题</h4>
+                                <p>描述文字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 控制按钮 -->
+                    <a class="left carousel-control" href="#box" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#box" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </section>
+        </section>
+        <!-------------------------------------Detail-start---------------------------------------->
+
+        <!-------------------------------------Nav-start---------------------------------------->
+        <nav id="Nav" class="navbar-fixed-bottom">
+            <ul>
+                <li>
+                    <button class="btn btn-info">交流</button>
+                </li>
+                <li>
+                    <button class="btn btn-info">收藏</button>
+                </li>
+            </ul>
+        </nav>
+        <!-------------------------------------Nav-start---------------------------------------->
+
+
+    </div>
+    <!--------------------------------------container end-------------------------------------------------->
+
+</body>
+
+</html>

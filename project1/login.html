@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/register-login.css" />
+    <link rel="stylesheet" type="text/css" href="css/verifyCode.css" />
+    <link rel="icon" href="icon.ico">
+    <title>登录</title>
+</head>
+
+<body>
+    <!------------------------------------------------navbar begin-------------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-asterisk"> </span>同城聚合</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="cover.html">封面</a></li>
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="market.html">市场</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于
+                    <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="publish.html">意见反馈</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">联系我</li>
+                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2424515614&amp;site=qq&amp;menu=yes">QQ</a></li>
+                            <li><a href="mailto:violetbenin@qq.com?subject=关于同城聚合的建议&body=您好,关于同城聚合的建议如下:">E-mail</a></li>
+                            <li><a href="https://github.com/VioletBenin">Github</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="您想搜索什么功能...">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="register.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------------navbar end----------------------------------------------------->
+    <!------------------------------------------------container begin----------------------------------------------------->
+    <div class="container" style="text-align:center;">
+
+        <marquee behavior="scroll" direction="right">
+            <h4>
+                <center>* * * QST最大的同城聚合平台 * * *</center>
+            </h4>
+        </marquee>
+        <div class="navbar-collapse collapse" style=" width:80%;  position: relative; left: 10%;">
+            <ul class="nav nav-tabs" style="text-align:center;  position: relative; left: 43%;">
+                <li role="presentation" class="active"><a href="#">登录</a></li>
+                <li role="presentation"><a href="register.html">注册</a></li>
+            </ul>
+            <div class="jumbotron" style="padding:5% 20%;">
+                <h1>
+                    <center>登录</center>
+                </h1>
+                <br>
+                <div class="tips">
+                    <span>没有账号？您可以选择: </span>
+                    <br><span><a href="register.html">→注册</a></span>
+                    <br><span><a href="index.html">→游客模式</a></span>
+                </div>
+                <br>
+                <form action="#" id="login-form" class="diy-form" style=" text-align: left;">
+                    <div class="form-group">
+                        <label for="name" style="text-align: left;">ID<font class="font" style="color: red;zoom:95%;font-weight:500;display:none;"> &nbsp;* ID不能为空 ！ </font></label>
+                        <input id="name" type="text" class="form-control" placeholder="请输入用户名/邮箱/手机号">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密码<font class="font" style="color: red;zoom:95%;font-weight:500;display:none;" > &nbsp;* 密码不能为空 !</font></label>
+                        <input id="password" type="password" class="form-control" placeholder="请输入密码">
+                    </div>
+                    <div class="form-group" style="position:relative; ">
+                        <label for="verifital_input">提交验证码</label>
+                        <div id="verifycode" class="verificationCode" style=" height:34px; position:absolute; right:15%; top:0; ">
+                            <span id="refresh-verifycode" class="glyphicon glyphicon-refresh" style="zoom:150%; position:relative; right:-105%; top:100%; "> </span>
+                            <canvas width="100" height="40" id="verifyCanvas"></canvas>
+                            <img id="code_img" style="display:inline;">
+                        </div>
+                        <input type="text " id="verifital_input" placeholder="请输入验证码 " class="form-control " style="width: 65%; ">
+                    </div>
+                    <center><label><input type="checkbox" >记住密码</label></center>
+                    <div style=" text-align:center; margin: auto; ">
+                        <input type="button " class="btn btn-primary  btn-operate " value="登录" style="  margin: 5% ;" id="check-identity" onclick="javascript:checkAll()">
+                        <input type="reset " class="btn btn-warning btn-operate " value="重置 " style="  margin: 5% ;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------container end---------------------------------------------------------->
+
+    <!---------------------------------------------------- js begin------------------------------------------------------------->
+    <!-------------------- base js begin---------------------->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+    <!--------------------- base js end----------------------->
+    <script type="text/javascript" src="js/code.js"></script>
+    <!-- for verifyCode -->
+    <script type="text/javascript" src="js/login.js"></script>
+    <!-- for login check -->
+    <script src="json/identity.json?cb=getJSONfromLocalhost"></script>
+    <!-- introduction extern json file -->
+    <!------------------------------------------------- js end--------------------------------------------------------------->
+
+</body>
+
+</html>

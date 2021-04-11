@@ -1,0 +1,76 @@
+body {
+    padding-top: 65px !important;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.container {
+    width: 930px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+body[class=yellowTheme] nav {
+    background-color: #FF0;
+}
+
+body[class=yellowTheme] {
+    background-color: #EE2;
+}
+
+body[class=orangeTheme] nav {
+    background-color: #FC7;
+}
+
+body[class=orangeTheme] {
+    background-color: #FD8;
+}
+
+body[class=pinkTheme] nav {
+    background-color: pink;
+}
+
+body[class=pinkTheme] {
+    background-color: #FDD;
+}
+
+body[class=purpleTheme] nav {
+    background-color: #BAE;
+}
+
+body[class=purpleTheme] {
+    background-color: #DDF;
+}
+
+body[class=blueTheme] nav {
+    background-color: #8CF;
+}
+
+body[class=blueTheme] {
+    background-color: #BDF;
+}
+
+body[class=greenTheme] nav {
+    background-color: #AEB;
+}
+
+body[class=greenTheme] {
+    background-color: #DFD;
+}
+
+body[class=greyTheme] nav {
+    background-color: #AAA;
+}
+
+body[class=greyTheme] {
+    background-color: #000;
+}
+
+body[class=whiteTheme] nav {
+    background-color: #FFF;
+}
+
+body[class=whiteTheme] {
+    background-color: #FFF;
+}

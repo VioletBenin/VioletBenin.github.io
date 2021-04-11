@@ -1,0 +1,27 @@
+getJSONfromLocalhost({
+    "loginInfo": [{
+            "identity": [{
+                "name": "admin",
+                "phone-number": "66666666666",
+                "e-mail": "admin@qq.com"
+            }],
+            "password": "admin666666"
+        }, //管理员
+        {
+            "identity": [{
+                "name": "user",
+                "phone-number": "88888888888",
+                "e-mail": "user@qq.com"
+            }],
+            "password": "user88888888"
+        }, //普通用户
+        {
+            "identity": [{
+                "name": "visiter",
+                "phone-number": "00000000000",
+                "e-mail": "visiter@qq.com"
+            }],
+            "password": "visiter000"
+        } //游客
+    ]
+})

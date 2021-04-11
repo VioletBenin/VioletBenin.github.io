@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.main_top {
+    background-image: url(../images/admin_top.jpg);
+    background-repeat: no-repeat;
+    height: 93px;
+    margin-bottom: 10px;
+}
+
+.main_top_btn {
+    float: right;
+    position: relative;
+    top: 60px;
+    right: 20px;
+}
+
+.main_mid {
+    border-top: 10px solid #B2B2B2;
+    border-bottom: 10px solid #B2B2B2;
+    height: 640px;
+    position: relative;
+}
+
+.main_mid_left_mid {
+    background-image: url(../images/default_m.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: -2.5px;
+    width: 690px;
+    height: 250px;
+    font-size: 14px;
+}
+
+.main_mid_left_mid_word {
+    padding: 110px 0px;
+}
+
+.main_mid_right {
+    background-color: #D3D3D3;
+    width: 240px;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.main_mid_right_welcome {
+    font-size: 13px;
+    text-align: center;
+}
+
+.main_mid_right_content1,
+.main_mid_right_content2,
+.main_mid_right_content3 {
+    background-color: #E9E9E9;
+    margin: 0px 5px;
+}
+
+.main_mid_right_content1_in,
+.main_mid_right_content3_in {
+    background-color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.main_mid_right_content1_in1,
+.main_mid_right_content3_in1 {
+    text-align: center;
+    margin: 5px;
+}
+
+.main_mid_right_content2_in {
+    background-color: white;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+}
+
+.main_mid_right_content2_in1 {
+    border: 1px solid #DBDBDB;
+    margin: 5px 5px 10px 5px;
+}
+
+.main_mid_right_content2_in1-1 {
+    width: 60px;
+    background-color: white;
+    position: relative;
+    bottom: 6px;
+    left: 10px;
+}
+
+.main_mid_right_content2_in1-2 {
+    margin: 10px 0px 10px 0px;
+}
+
+.main_mid_right_content2_in2 {
+    background-color: #BABABA;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -8px;
+}
+
+.main_mid_right_content4 {
+    background-color: #E9E9E9;
+    margin: 0px 5px;
+    height: 220px;
+}
+
+.main_mid_right_content4_in {
+    background-color: white;
+    padding: 2px 10px;
+    text-align: center;
+}
+
+.iframeDisplay {
+    width: 660px;
+    height: 240px;
+    position: relative;
+    bottom: 230px;
+    left: -50px;
+}
+
+.UserManagement,
+.DisplayInformation,
+.PaymentSettings {
+    width: 660px;
+    height: 230px;
+    text-align: center;
+}
+
+.UserManagement,
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.UserManagement a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.DisplayInformation a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.DisplayInformation a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.PaymentSettings_title {
+    font-size: 15px;
+    font-weight: bold;
+    color: steelblue;
+    text-align: left;
+}
+
+.PaymentSettings_content {
+    background-color: #FEFDE9;
+    text-align: left;
+}
+
+.PaymentSettings_content a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.PaymentSettings_content a:hover {
+    color: red;
+    text-decoration: underline;
+}

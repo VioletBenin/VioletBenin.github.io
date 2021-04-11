@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>后台</title>
+    <link rel="stylesheet" type="text/css" href="css/bgpage.css">
+    <script src="js/bgpage.js"></script>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!------------------------------------------------navbar begin-------------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-asterisk"> </span>同城聚合</a>
+            </div>
+            <div class="navbar" id="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="cover.html">封面</a></li>
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="market.html">市场</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于
+                    <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="publish.html">意见反馈</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">联系我</li>
+                            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2424515614&amp;site=qq&amp;menu=yes">QQ</a></li>
+                            <li><a href="mailto:violetbenin@qq.com?subject=关于同城聚合的建议&body=您好,关于同城聚合的建议如下:">E-mail</a></li>
+                            <li><a href="https://github.com/VioletBenin">Github</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="您想搜索什么功能...">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="register.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------------navbar end----------------------------------------------------->
+    <div class="container">
+        <div class="main">
+            <div class="main_top">
+                <div class="main_top_btn">
+                    <a href="index.html"><img src="images/admin_index.gif"></a>
+                    <a href="login.html"><img src="images/admin_exit.gif"></a>
+                </div>
+            </div>
+            <div class="main_mid">
+                <div class="main_mid_left">
+                    <div class="main_mid_left_top"><img src="images/default_t.jpg"></div>
+                    <div class="main_mid_left_mid">
+                        <div class="main_mid_left_mid_word"></div>
+                        <div class="iframeDisplay">
+                            <div class="navbar-collapse collapse" style=" width:80%;  position: relative; left: 10%;">
+                                <title><strong>后台管理</strong></title>
+                                <ul class="nav nav-tabs" style="text-align:center;  position: relative; left: 43%;">
+                                    <li role="presentation" id="link1" class="active" onclick="click1()"><a href="#">用户</a></li>
+                                    <li role="presentation" id="link2" onclick="click2()"><a>帖子</a></li>
+                                </ul>
+                                <iframe width="800px" id="iframe" height="500px" src="user.html" frameborder="0" scrolling="no" style="zoom:75%;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_mid_right">
+                    <div class="main_mid_right_welcome">欢迎 管理员 登录：</div>
+                    <div class="main_mid_right_content1">
+                        <div class="title1">■用户管理</div>
+                        <div class="main_mid_right_content1_in">请输入要查询的用户ID：
+                            <div class="main_mid_right_content1_in1">
+                                <input type="text" class="form-control" style="zoom:80%;"> <input class="inquiry1" type="button" value="查询">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_mid_right_content2">
+                        <div class="title1">■显示方式</div>
+                        <div class="main_mid_right_content2_in">
+                            <div class="main_mid_right_content2_in1">
+                                <div class="main_mid_right_content2_in1-1">★付费状态</div>
+                                <div class="main_mid_right_content2_in1-2">
+                                    <input type="radio">未付费
+                                    <input type="radio">已付费
+                                    <input type="radio">全部
+                                </div>
+                            </div>
+                            <div class="main_mid_right_content2_in1">
+                                <div class="main_mid_right_content2_in1-1">★审核状态</div>
+                                <div class="main_mid_right_content2_in1-2">
+                                    <input type="radio">未审核
+                                    <input type="radio">已审核
+                                    <input type="radio">全部
+                                </div>
+                            </div>
+                            <div class="main_mid_right_content2_in2">
+                                信息类别：
+                                <select size="1">
+										<option>招聘信息</option>
+									</select>
+                                <input class="btn btn-xs" type="button" value="显示">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_mid_right_content3">
+                        <div class="title1">■付费设置</div>
+                        <div class="main_mid_right_content3_in">请输入要设为已付费状态的信息ID：
+                            <div class="main_mid_right_content3_in1">
+                                <input type="text" class="form-control" style="zoom:80%;"> <input class="inquiry2 btn btn-xs" type="button" value="查询">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_mid_right_content4">
+                        <div class="title1">■日历</div>
+                        <div class="main_mid_right_content4_in"><img src="images/rili.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function click1() {
+        console.log($('#link1')[0])
+        $('#link1').attr("class", "active")
+        $('#link2').attr("class", " ")
+        $("#iframe").attr("src", "user.html")
+    }
+
+    function click2() {
+        $('#link2').attr("class", "active")
+        $('#link1').attr("class", "")
+        $("#iframe").attr("src", "posts.html")
+    }
+</script>
+
+</html>
