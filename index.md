@@ -1,18 +1,23 @@
+<html>
 <head>
     <meta charset="utf-8">
     <title>VioletBenin</title>
     <link rel="icon" href="icon.ico">
 </head>
-
+</html>
 
 # 欢迎来到我的主页
+
+[我的简历👉点击下载](测试开发实习生-徐贝宁.pdf)
+
+## [博客列表](/blog)
 
 ## 项目经历
 
 - [静态页面-同城聚合项目](/project1/index.html)
 - [Oracle电子商城项目展示](https://violetbenin.github.io/ORACLE_PRACTICAL_TRAINING/)
 
-## [博客列表](/blog)
+
 
 ## 与我联系
  - [Github](https://github.com/VioletBenin)
