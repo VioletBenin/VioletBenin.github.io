@@ -22,4 +22,4 @@
 ## 与我联系
  - [Github](https://github.com/VioletBenin)
  - [QQ](tencent://message/?uin=625310165&Site=&Menu=yes)
- - [E-mail](mailto:)
+ - [E-mail](mailto:violetbenin@qq.com)
