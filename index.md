@@ -9,6 +9,8 @@
 # 欢迎来到我的主页
 
 ## [博客列表](/blog)
+- [编程技术·Coding](/blog-coding/index.html)
+- [思考·Thinking](/blog-thinking/index.html)
 
 ## 项目经历
 
