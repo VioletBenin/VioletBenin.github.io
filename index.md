@@ -8,7 +8,7 @@
 
 # 欢迎来到我的主页
 
-## [博客列表](/blog)
+## 博客列表
 - [编程技术·Coding](/blog-coding/index.html)
 - [思考·Thinking](/blog-thinking/index.html)
 
