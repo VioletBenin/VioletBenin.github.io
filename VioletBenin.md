@@ -1,7 +1,6 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>VioletBenin</title>
     <link rel="icon" href="icon.ico">
 </head>
 </html>
@@ -9,7 +8,7 @@
 # 欢迎来到我的主页
 
 ## 博客列表
-- [编程技术·Coding](/blog-coding/index.html)
+- [编程·Coding](/blog-coding/index.html)
 - [思考·Thinking](/blog-thinking/index.html)
 
 ## 项目经历
