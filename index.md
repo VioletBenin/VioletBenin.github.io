@@ -8,7 +8,7 @@
 # 欢迎来到我的主页
 
 ## 博客列表
-- [编程·Coding](/blog-coding/index.html)
+- [编程·Coding](/blog-coding/编程·Coding.md)
 - [思考·Thinking](/blog-thinking/思考·Thinking.md)
 
 ## 项目经历
