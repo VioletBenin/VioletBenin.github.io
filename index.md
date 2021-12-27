@@ -10,6 +10,7 @@
 ## 博客列表
 - [编程·Coding](/blog-coding/编程·Coding.md)
 - [思考·Thinking](/blog-thinking/思考·Thinking.md)
+- [读书笔记·Reading](/blog-reading/读书笔记·Reading.md)
 
 ## 项目经历
 
